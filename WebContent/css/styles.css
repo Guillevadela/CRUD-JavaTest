@@ -4,6 +4,10 @@
    @github: .......
 ************************************************************/
 
+body{
+	background- color: gray;
+}
+
 main[role="main"] {
     margin-top: 4rem;
     min-height: 80vh;
