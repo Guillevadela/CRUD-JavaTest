@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <jsp:include page="includes/cabecera.jsp" >
   <jsp:param name="pagina" value="inicio" />
   <jsp:param name="title" value="Inicio" /> 
@@ -23,19 +24,17 @@
 			<tr>
 				<td>Id</td>
 				<td>Nombre</td>
-				<td>Cantidad</td>
-				<td>Precio</td>
-				<td>fecha_crear</td>
-				<td>fecha_actualizar</td>
+				<td>operaciones</td>
 			</tr>
+			
 		</thead>
 		<tbody>
 			<c:forEach items="${series}" var="p">
 				<tr>
 					<td>${p.id}</td> <% // no hace falta usar el getter p.id == p.getId() %>
 					<td>${p.nombre}</td>
-					<td>${p.precio} &euro;</td>
-					<td><img src="${p.imagen}"  class="img-thumbnail" alt="imagen..."></td>
+					
+					
 					<td>
 						<a href="serie?id=${p.id}" class="mr-4"> <i class="far fa-edit fa-2x" title="Editar Serie"></i></a>
 						<a href="serie-eliminar?id=${p.id}"><i class="fas fa-trash fa-2x" title="Eliminar Serie"></i></a>
