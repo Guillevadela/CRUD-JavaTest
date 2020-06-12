@@ -12,8 +12,7 @@
 	<a href="producto">Ir a formulario para Crear Nueva Serie</a>
 
 	<%
-		// Podemos usar el ${}  EL - Expresion Lenguage en los JSPs
-		// suele ser mas comodo que tener que usar < % % >, a estos porcentajes se les llama SCRIPLETS
+		// Podemos usar el ${}  EL - Expresion Lenguage en los JSPs, suele ser mas comodo que tener que usar < % % >, a estos porcentajes se les llama SCRIPLETS
 		// ademas se pueden combinar con JSTL - Java Servlet Tag Libraries
 	%>	
 
