@@ -35,7 +35,7 @@ public class SerieController extends HttpServlet {
 
 		ArrayList arraySeries = new ArrayList();
 
-		arraySeries = serieDAO.getAll(); // casteamos la lista a un tipo ArrayList
+		arraySeries = serieDAO.getAll(); // casteamos la lista a un ArrayList
 
 		request.setAttribute("series", arraySeries);
 

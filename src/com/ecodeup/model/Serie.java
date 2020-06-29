@@ -1,23 +1,23 @@
 package com.ecodeup.model;
 
-import java.sql.Date;
-
 public class Serie {
 	private int id;
 	private String nombre;
 	private double cantidad;
 	private double precio;
-	private Date fechaCrear;
-	private Date fechaActualizar;
+	/*
+	 * private Date fechaCrear; private Date fechaActualizar;
+	 */
 
-	public Serie(int id, String nombre, double cantidad, double precio, Date fechaCrear, Date fechaActualizar) {
+	public Serie(int id, String nombre, double cantidad, double precio) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.cantidad = cantidad;
 		this.precio = precio;
-		this.fechaCrear = fechaCrear;
-		this.fechaActualizar = fechaActualizar;
+		/*
+		 * this.fechaCrear = fechaCrear; this.fechaActualizar = fechaActualizar;
+		 */
 	}
 
 	public Serie() {
@@ -56,25 +56,19 @@ public class Serie {
 		this.precio = precio;
 	}
 
-	public Date getFechaCrear() {
-		return fechaCrear;
-	}
-
-	public void setFechaCrear(Date fechaCrear) {
-		this.fechaCrear = fechaCrear;
-	}
-
-	public Date getFechaActualizar() {
-		return fechaActualizar;
-	}
-
-	public void setFechaActualizar(Date fechaActualizar) {
-		this.fechaActualizar = fechaActualizar;
-	}
+	/*
+	 * public Date getFechaCrear() { return fechaCrear; }
+	 * 
+	 * public void setFechaCrear(Date fechaCrear) { this.fechaCrear = fechaCrear; }
+	 * 
+	 * public Date getFechaActualizar() { return fechaActualizar; }
+	 * 
+	 * public void setFechaActualizar(Date fechaActualizar) { this.fechaActualizar = fechaActualizar; }
+	 */
 
 	@Override
 	public String toString() {
-		return "Serie [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio + ", fechaCrear=" + fechaCrear + ", fechaActualizar=" + fechaActualizar + "]";
+		return "Serie [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio + "]";
 	}
 
 }
